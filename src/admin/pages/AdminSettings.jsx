@@ -1,0 +1,1 @@
+export default function AdminSettings(){return <div className="container page-wrap"><h1 className="section-title">Admin settings</h1><div className="form-card"><p className="mb-1 fw-bold">Security note</p><p className="muted mb-0">Admin accounts are created by an authorised database administrator. Public self-registration cannot assign the admin role.</p></div></div>}

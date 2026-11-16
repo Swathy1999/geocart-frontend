@@ -1,0 +1,236 @@
+:root {
+  --forest: #143b2b;
+  --leaf: #2f8058;
+  --mint: #e6f1e9;
+  --ink: #1d2c24;
+  --muted: #718078;
+  --line: #e5eae4;
+}
+body {
+  color: var(--ink);
+}
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  background: var(--forest);
+  color: #fff;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+.brand {
+  font: 800 22px Manrope;
+  color: var(--forest);
+}
+.nav-link {
+  color: #526259;
+  font-weight: 600;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: var(--leaf);
+}
+.hero {
+  background: linear-gradient(120deg, #143b2b, #286a49);
+  border-radius: 28px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.hero:after {
+  content: "⌖";
+  position: absolute;
+  right: 7%;
+  top: -60px;
+  font-size: 300px;
+  line-height: 1;
+  color: #ffffff0d;
+}
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  font-weight: 800;
+  color: #b8ddc4;
+}
+.hero h1 {
+  font-size: clamp(2.3rem, 5vw, 4.2rem);
+  line-height: 1.08;
+  max-width: 680px;
+}
+.hero-copy {
+  color: #d6e6db;
+  max-width: 560px;
+  font-size: 17px;
+}
+.search-panel {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 9px;
+  display: flex;
+  gap: 8px;
+  max-width: 650px;
+}
+.search-panel input {
+  border: 0;
+  outline: 0;
+  flex: 1;
+  min-width: 0;
+  padding: 8px 12px;
+}
+.section-kicker {
+  color: var(--leaf);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.section-title {
+  font-size: 27px;
+  font-weight: 800;
+}
+.soft-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 5px 20px #193d2810;
+  overflow: hidden;
+  transition: 0.2s;
+  height: 100%;
+}
+.soft-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px #193d2818;
+}
+.store-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background: #eaf0e9;
+}
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background: #f1f3ef;
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #edf5ef;
+  color: #276646;
+  border-radius: 99px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.muted {
+  color: var(--muted);
+}
+.page-wrap {
+  min-height: 65vh;
+  padding-top: 38px;
+  padding-bottom: 64px;
+}
+.form-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 30px #193d280d;
+}
+.form-control,
+.form-select {
+  border-color: #dce5dc;
+  border-radius: 11px;
+  padding: 11px 13px;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #62a17b;
+  box-shadow: 0 0 0 0.2rem #2f80581c;
+}
+.btn {
+  border-radius: 11px;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+.footer {
+  background: #102d22;
+  color: #d8e5dc;
+  padding: 36px 0;
+}
+.stat-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+}
+.stat-number {
+  font: 800 28px Manrope;
+  color: var(--forest);
+}
+.table > :not(caption) > * > * {
+  padding: 13px 12px;
+}
+.empty-state {
+  background: #fff;
+  border: 1px dashed #cbd8cc;
+  border-radius: 18px;
+  padding: 42px;
+  text-align: center;
+  color: var(--muted);
+}
+.auth-shell {
+  max-width: 480px;
+  margin: 30px auto;
+}
+.map-panel {
+  background: linear-gradient(135deg, #e7f0e5, #d4e6d7);
+  border-radius: 18px;
+  padding: 22px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #24563b;
+}
+.badge-open {
+  background: #e6f5eb;
+  color: #21623d;
+}
+.badge-closed {
+  background: #f1f2ef;
+  color: #68736b;
+}
+@media (max-width: 700px) {
+  .hero {
+    border-radius: 20px;
+  }
+  .hero-inner {
+    padding: 30px !important;
+  }
+  .search-panel {
+    flex-wrap: wrap;
+  }
+  .search-panel input {
+    flex-basis: 100%;
+  }
+  .section-title {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,1 @@
+export default function AdminHeader(){return <div className="d-flex justify-content-between align-items-center mb-4"><div><div className="section-kicker">Control centre</div><h1 className="section-title mb-0">GeoCart administration</h1></div><span className="pill"><i className="bi bi-shield-check"/> Admin access</span></div>}

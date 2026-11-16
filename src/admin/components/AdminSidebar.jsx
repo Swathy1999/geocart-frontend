@@ -1,0 +1,1 @@
+export default function AdminSidebar(){return <aside className="form-card"><strong>Management</strong><p className="small muted mt-2 mb-0">Review store applications, monitor platform activity and keep the marketplace healthy.</p></aside>}
