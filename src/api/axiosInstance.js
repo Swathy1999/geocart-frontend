@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://geocart-frontend.vercel.app",
+  baseURL: "https://geocart-backend-5.onrender.com",
   timeout:5000,
   headers: {
     "Content-Type": "application/json",
